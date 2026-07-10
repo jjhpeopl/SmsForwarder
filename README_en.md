@@ -36,7 +36,7 @@ Automated Tasks & Quick Commands, effortlessly automate your life, doubling your
 
 * Should any entity finds the code/APK of this repo infringing their rights, please provide notice and identity and proprietorship document, and we will delete relating code/APK after examining such document.
 
-* Privacy: `SmsForwarder` collects absolutely **NO** any of your personal data!! Except 1) version information to umeng.com for stats as the App starts, and 2) version number when manually check for update, `SmsForwarder` is **NOT** sending any data without users' knowledge.
+* Privacy: This branch does not include the UMeng analytics SDK and does not contact analytics, update, or tips services automatically at startup. Network requests occur only when the user configures a forwarding channel, manually checks for updates, or explicitly uses another network-dependent feature.
 
 --------
 
