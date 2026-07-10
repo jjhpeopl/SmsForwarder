@@ -252,16 +252,6 @@
     @com.xuexiang.xipc.annotation.* <methods>;
 }
 
-# umeng统计
--keep class com.umeng.** {*;}
--keepclassmembers class * {
-   public <init> (org.json.JSONObject);
-}
--keepclassmembers enum * {
-    public static **[] values();
-    public static ** valueOf(java.lang.String);
-}
-
 -keep class com.xuexiang.xui.widget.edittext.materialedittext.** { *; }
 
 # Android Keep Alive(安卓保活)，Cactus 集成双进程前台服务，JobScheduler，onePix(一像素)，WorkManager，无声音乐
