@@ -76,26 +76,11 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.xuexiang.xui.widget.button.SmoothCheckBox
-                        android:id="@+id/scb_auto_check_update"
-                        android:layout_width="15dp"
-                        android:layout_height="15dp"
-                        android:layout_marginStart="5dp"
-                        app:scb_color_checked="@color/colorPrimary" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/auto_check"
-                        android:textSize="@dimen/text_size_mini"
-                        tools:ignore="SmallSp" />
-
                     <com.xuexiang.xui.widget.button.CountDownButton
                         android:id="@+id/btn_update"
                         style="@style/Button.Blue"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
                         android:minWidth="30dp"
                         android:minHeight="0dp"
                         android:padding="5dp"

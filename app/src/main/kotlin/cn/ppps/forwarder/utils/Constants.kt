@@ -28,7 +28,6 @@ const val ACTION_UPDATE_NOTIFICATION = "UPDATE_NOTIFICATION"
 const val EXTRA_UPDATE_NOTIFICATION = "EXTRA_UPDATE_NOTIFICATION"
 
 //初始化相关
-const val AUTO_CHECK_UPDATE = "auto_check_update"
 const val JOIN_PREVIEW_PROGRAM = "join_preview_program"
 const val IS_AGREE_PRIVACY_KEY = "is_agree_privacy_key"
 

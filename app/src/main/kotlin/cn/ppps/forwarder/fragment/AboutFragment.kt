@@ -65,11 +65,6 @@ class AboutFragment : BaseFragment<FragmentAboutBinding?>(), SuperTextView.OnSup
         val currentYear = dateFormat.format(Date())
         binding!!.copyright.text = java.lang.String.format(resources.getString(R.string.about_copyright), currentYear)
 
-        binding!!.scbAutoCheckUpdate.isChecked = SettingUtils.autoCheckUpdate
-        binding!!.scbAutoCheckUpdate.setOnCheckedChangeListener { _, isChecked ->
-            SettingUtils.autoCheckUpdate = isChecked
-        }
-
         binding!!.sbJoinPreviewProgram.isChecked = SettingUtils.joinPreviewProgram
         binding!!.sbJoinPreviewProgram.setOnCheckedChangeListener { _, isChecked ->
             SettingUtils.joinPreviewProgram = isChecked

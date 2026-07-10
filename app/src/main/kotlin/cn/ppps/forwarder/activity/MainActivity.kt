@@ -45,8 +45,6 @@ import cn.ppps.forwarder.utils.FRPC_LIB_VERSION
 import cn.ppps.forwarder.utils.Log
 import cn.ppps.forwarder.utils.SettingUtils
 import cn.ppps.forwarder.utils.XToastUtils
-import cn.ppps.forwarder.utils.sdkinit.XUpdateInit
-import cn.ppps.forwarder.widget.GuideTipsDialog.Companion.showTips
 import cn.ppps.forwarder.workers.LoadAppListWorker
 import com.jeremyliao.liveeventbus.LiveEventBus
 import com.xuexiang.xhttp2.XHttp
@@ -61,7 +59,6 @@ import com.xuexiang.xui.widget.dialog.materialdialog.DialogAction
 import com.xuexiang.xui.widget.dialog.materialdialog.GravityEnum
 import com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog
 import com.xuexiang.xutil.file.FileUtils
-import com.xuexiang.xutil.net.NetworkUtils
 import com.yarolegovich.slidingrootnav.SlideGravity
 import com.yarolegovich.slidingrootnav.SlidingRootNav
 import com.yarolegovich.slidingrootnav.SlidingRootNavBuilder
@@ -182,12 +179,6 @@ class MainActivity : BaseActivity<ActivityMainBinding?>(), DrawerAdapter.OnItemS
     private fun initData() {
         mMenuTitles = ResUtils.getStringArray(this, R.array.menu_titles)
         mMenuIcons = ResUtils.getDrawableArray(this, R.array.menu_icons)
-
-        //仅当开启自动检查且有网络时自动检查更新/获取提示
-        if (SettingUtils.autoCheckUpdate && NetworkUtils.isHaveInternet()) {
-            showTips(this)
-            XUpdateInit.checkUpdate(this, false, SettingUtils.joinPreviewProgram)
-        }
     }
 
     //按返回键不退出回到桌面

@@ -7,9 +7,6 @@ import com.xuexiang.xutil.resource.ResUtils.getString
 class SettingUtils private constructor() {
     companion object {
 
-        //是否启动时检查更新
-        var autoCheckUpdate: Boolean by SharedPreference(AUTO_CHECK_UPDATE, true)
-
         //是否加入SmsF预览体验计划
         var joinPreviewProgram: Boolean by SharedPreference(JOIN_PREVIEW_PROGRAM, false)
 
